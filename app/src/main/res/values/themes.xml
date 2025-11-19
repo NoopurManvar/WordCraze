@@ -1,0 +1,21 @@
+<resources>
+    <style name="Base.Theme.WordCraze" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Your primary color -->
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/purple_200</item>
+
+        <!-- Force purple top bar -->
+        <item name="android:statusBarColor">@color/purple_700</item>
+        <item name="android:navigationBarColor">@color/purple_700</item>
+
+        <!-- Ensure icons are white -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Prevent system wallpaper theming -->
+
+        <!-- Ensure backgrounds stay consistent -->
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.WordCraze" parent="Base.Theme.WordCraze" />
+</resources>

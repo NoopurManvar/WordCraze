@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">Word Craze</string>
+
+    <!-- Level Selection Screen -->
+    <string name="back">Back</string>
+    <string name="back_arrow">&lt;</string>
+    <string name="select_level">Select Level</string>
+    <string name="progress">Progress</string>
+
+    <!-- Level States -->
+    <string name="complete">Complete</string>
+    <string name="play">Play</string>
+    <string name="locked">🔒</string>
+    <string name="star">⭐</string>
+    <string name="levels_scroll_area">Scrollable level selection area</string>
+    <!-- Progress Format -->
+    <string name="progress_format">%1$d/%2$d</string>
+</resources>

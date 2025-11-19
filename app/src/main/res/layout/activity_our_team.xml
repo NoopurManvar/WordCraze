@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F5FF"
+    android:paddingTop="12dp"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/back"
+            android:contentDescription="Back"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Header Section -->
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Our Amazing Team"
+            android:textSize="28sp"
+            android:textColor="#2E3A59"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Meet the brilliant minds behind WordCraze!"
+            android:textSize="16sp"
+            android:textColor="#2E3A59"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@id/headerTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Team Member 1 Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/memberCard1"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@id/subTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/member1Photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Team Member 1 Photo"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/teammate1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Noopur Manvar"
+                    android:textColor="#2E3A59"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/member1Branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="B.Tech, Computer Engineering"
+                    android:textColor="#FF6B9D"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Team Member 2 Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/memberCard2"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/memberCard1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/member2Photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/teammate2"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Team Member 2 Photo" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sasmita Das"
+                    android:textSize="22sp"
+                    android:textColor="#2E3A59"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:id="@+id/member2Branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B.Tech, Computer Engineering"
+                    android:textSize="16sp"
+                    android:textColor="#FFD93D"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Team Member 3 Card (Guide/Mentor) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/memberCard3"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/memberCard2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <!-- Photo -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/member3Photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/guidedby"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Guide Photo" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/member3Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jigar Dave"
+                    android:textSize="22sp"
+                    android:textColor="#2E3A59"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp" />
+
+                <!-- Designation -->
+                <TextView
+                    android:id="@+id/member3Branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assistant Professor"
+                    android:textSize="16sp"
+                    android:textColor="#6BCF7F"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Role -->
+                <TextView
+                    android:id="@+id/member3Role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FoET, Marwadi University"
+                    android:textSize="16sp"
+                    android:textColor="#6BCF7F"
+                    android:alpha="0.8"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="1dp" />
+
+                <!-- Extra Line -->
+                <TextView
+                    android:id="@+id/member3Extra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Guide &amp; Mentor"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Thank You Message -->
+        <TextView
+            android:id="@+id/thankYouMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="✨ Together we make learning fun and engaging! ✨"
+            android:textSize="18sp"
+            android:textColor="#2E3A59"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:alpha="0.9"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintTop_toBottomOf="@id/memberCard3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Floating Stars for decoration -->
+        <TextView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐"
+            android:textSize="24sp"
+            android:alpha="0.6"
+            app:layout_constraintTop_toTopOf="@id/memberCard1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌟"
+            android:textSize="20sp"
+            android:alpha="0.5"
+            app:layout_constraintTop_toTopOf="@id/memberCard2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✨"
+            android:textSize="22sp"
+            android:alpha="0.7"
+            app:layout_constraintTop_toTopOf="@id/memberCard3"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
