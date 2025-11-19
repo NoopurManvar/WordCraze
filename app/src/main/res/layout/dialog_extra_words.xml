@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/rounded_dialog_bg">
+
+    <TextView
+        android:id="@+id/tvExtraTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXTRA WORDS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#4E342E"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvExtraSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Words not included in this level"
+        android:textColor="#8D6E63"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/listExtraWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:layout_marginTop="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressExtra"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:progress="0"
+        android:max="5"
+        android:progressTint="#81C784"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1 coin for all extra words!"
+        android:textColor="#388E3C"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

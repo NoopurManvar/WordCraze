@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg"
+    android:elevation="6dp">
+
+    <TextView
+        android:id="@+id/tvHintMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use the hint button to get help!"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnGotIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Got it"
+        android:backgroundTint="#942F2F"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+[
+  {"levelNumber":1,"letters":["T","A","D","C","O","G"],"targetWords":["TAG","DOT","CAT","ACT"],
+    "gridSize":[4,3],"maxTrials":5,"cwords":["DOG","COAT","GOD","TOAD","AGO","OAT","GOT","GOAT"]},
+
+  {"levelNumber":2,"letters":["N","E","A","S","P"],"targetWords":["SPAN","SNAP","PANE","SANE"],
+    "gridSize":[4,4],"maxTrials":5,"cwords":["SPA","NAP","SEA","PEA","APE","PAN","PEN"]},
+
+  {"levelNumber":3,"letters":["M","R","A","D"],"targetWords":["ARM","MAD","DAM"],
+    "gridSize":[3,3],"maxTrials":5,"cwords":[]},
+
+  {"levelNumber":4,"letters":["O","E","T","M","R","C"],"targetWords":["CORE","TERM","COME"],
+    "gridSize":[3,4],"maxTrials":5,"cwords":["TOE","ROT","MORE","TORE","COMET","METRO"]},
+
+  {"levelNumber":5,"letters":["E","S","O","U","H","R"],"targetWords":["USER","SOUR","SHORE"],
+    "gridSize":[3,5],"maxTrials":5,"cwords":["HOE","OUR","SUE","USE","ROE","RUSH","ROSE","SHOE","SURE","HOUR","HOSE","HOUSE","HORSE"]},
+
+  {"levelNumber":6,"letters":["L","A","M","E","P"],"targetWords":["LAMP","MAP","PAL"],
+    "gridSize":[3,4],"maxTrials":5,"cwords":["LAP","PEA","PALM","LAME","MEAL","MALE","PALE","PEAL","MAPLE","AMPLE"]},
+
+  {"levelNumber":7,"letters":["R","E","B","I","D"],"targetWords":["BRIDE","BED","RED"],
+    "gridSize":[3,5],"maxTrials":5,"cwords":["RIDE","BID","RID","RIB","DIE","BIDE","DIRE","BRIE"]},
+
+  {"levelNumber":8,"letters":["E","L","R","W","O","F"],"targetWords":["FLOW","LOW","LOWER"],
+    "gridSize":[3,5],"maxTrials":5,"cwords":["ROW","OWE","OWL","LORE","FOR","ORE","ROE","ELF","FEW","WOLF","WORE","FORE","ROLE","FLEW","FLOWER"]},
+
+  {"levelNumber":9,"letters":["R","E","T","S","A"],"targetWords":["STAR","TEAR","RATE"],
+    "gridSize":[3,4],"maxTrials":5,"cwords":["ART","ATE","EAR","ERA","RAT","SAT","SEA","SET","TEA","EAST","REST","STARE","EARST","RATE"]},
+
+  {"levelNumber":10,"letters":["C","U","D","O","L"],"targetWords":["CLOUD","OLD","DUO"],
+    "gridSize":[3,5],"maxTrials":5,"cwords":["COLD","LOUD"]},
+
+  {"levelNumber":11,"letters":["H","O","E","S","U"],"targetWords":["HOUSE","HUE","USE"],
+    "gridSize":[3,5],"maxTrials":5,"cwords":["HOE","SUE","HOSE","SHOE"]},
+
+  {"levelNumber":12,"letters":["E","N","P","A","L"],"targetWords":["PLANE","PAN","LEAN"],
+    "gridSize":[3,5],"maxTrials":5,"cwords":["NAP","PAL","PEA","PLAN","LANE","PALE"]},
+
+  {"levelNumber":13,"letters":["T","O","B","A","S"],"targetWords":["BOAT","OAT","TAB"],
+    "gridSize":[3,4],"maxTrials":5,"cwords":["BAT","SOB","BOT","SAT"]},
+
+  {"levelNumber":14,"letters":["H","I","R","S","F","E"],"targetWords":["FISH","SIR","RIFE"],
+    "gridSize":[3,4],"maxTrials":5,"cwords":["FIR","HIRE","RUSH","FRESH","SHIER","FISHER"]},
+
+  {"levelNumber":15,"letters":["U","M","T","O","N"],"targetWords":["MOUNT","NUT","TON"],
+    "gridSize":[3,5],"maxTrials":5,"cwords":["ON","NO","OUT","NOT","TONE"]},
+
+  {"levelNumber":16,"letters":["D","C","S","R","A"],"targetWords":["CARD","SCAR","RAD"],"gridSize":[3,4],"maxTrials":5,"cwords":["AS","CAR","ARC","SAD","CAD","ARS","RADS","CARDS"]},
+  {"levelNumber":17,"letters":["M","G","R","E","A"],"targetWords":["GAME","RAM","MARE"],"gridSize":[3,4],"maxTrials":5,"cwords":["AM","ARM","MAR","MAG","GAM","ARE","ERA","EAR","MAGE","REAM","GEAR","GRAM","GAMER"]},
+  {"levelNumber":18,"letters":["S","E","T","R","E"],"targetWords":["TREE","REST","SET"],"gridSize":[3,4],"maxTrials":5,"cwords":["TEE","SEE","RES","EST","RET","SER","TEES","SEER","RESET","TREES"]},
+  {"levelNumber":19,"letters":["K","S","A","E","N"],"targetWords":["SNAKE","ASK","SEA"],"gridSize":[3,5],"maxTrials":5,"cwords":["AN","AS","SEN","SAN","ANE","SANE","SANK"]},
+  {"levelNumber":20,"letters":["B","R","A","S","C"],"targetWords":["CRAB","BAR","SCAR"],"gridSize":[3,4],"maxTrials":5,"cwords":["AS","AR","ARC","BAR","CAB","SAB","CAR","ABS","BRAS","CRABS"]},
+  {"levelNumber":21,"letters":["P","T","A","I","N"],"targetWords":["PAINT","PIN","TIP"],"gridSize":[3,5],"maxTrials":5,"cwords":["AN","AT","IN","IT","PA","PI","TIN","PAN","NAP","PAT","PIT","APT","TAP","PIA","PAIN","PINT","ANTI","TAIN"]},
+  {"levelNumber":22,"letters":["S","O","N","T","E"],"targetWords":["STONE","TON","ONE"],"gridSize":[3,5],"maxTrials":5,"cwords":["ON","NO","SO","TO","NOT","SON","SOT","ENS","NOTE","TONE","EONS","NOES"]},
+  {"levelNumber":23,"letters":["O","B","L","C","K"],"targetWords":["BLOCK","COB","OK"],"gridSize":[3,5],"maxTrials":5,"cwords":["BLO","LOB","BLOC"]},
+  {"levelNumber":24,"letters":["S","F","H","A","L"],"targetWords":["FLASH","ASH","HALF"],"gridSize":[3,5],"maxTrials":5,"cwords":["AS","HAS","ALAS","HASH","LASH"]},
+  {"levelNumber":25,"letters":["R","I","W","E","V","R"],"targetWords":["RIVER","VIE","WIRE"],"gridSize":[3,5],"maxTrials":5,"cwords":[]},
+  {"levelNumber":26,"letters":["T","B","A","L","E"],"targetWords":["TABLE","BAT","TEA"],"gridSize":[3,5],"maxTrials":5,"cwords":["AT","BE","TAB","BAT","LAB","LET","BAE","BATE","BALE","ABLE","ABET","TEAL","TALE","LATE"]},
+  {"levelNumber":27,"letters":["C","H","R","I","A"],"targetWords":["CHAIR","AIR","HAIR"],"gridSize":[3,5],"maxTrials":5,"cwords":["ARC","CAR","CHAR","RICH","ARCH"]},
+  {"levelNumber":28,"letters":["O","S","M","N","O"],"targetWords":["MOON","SON","NOON"],"gridSize":[3,4],"maxTrials":5,"cwords":["ON","NO","SO","SUN"]},
+  {"levelNumber":29,"letters":["Y","D","T","S","U"],"targetWords":["STUDY","DAY","DUTY"],"gridSize":[3,5],"maxTrials":5,"cwords":["US","STUD","DUST"]},
+  {"levelNumber":30,"letters":["A","Z","I","P","Z"],"targetWords":["PIZZA","ZIP","ZAP"],"gridSize":[3,5],"maxTrials":5,"cwords":["PI","API"]},
+  {"levelNumber":31,"letters":["G","L","A","S","S"],"targetWords":["GLASS","SAG","SLAG"],"gridSize":[3,5],"maxTrials":5,"cwords":["AS","GAL","SAL","SAGS","LASS"]},
+  {"levelNumber":32,"letters":["C","K","I","R","B"],"targetWords":["BRICK","RIB","BICK"],"gridSize":[3,5],"maxTrials":5,"cwords":["CAB","BRIC"]},
+  {"levelNumber":33,"letters":["F","R","E","O","K","E"],"targetWords":["FORK","FOE","FEE"],"gridSize":[3,5],"maxTrials":5,"cwords":["FOR","ORE","ROKE"]},
+  {"levelNumber":34,"letters":["S","A","D","E","H"],"targetWords":["SHADE","HAD","HEAD"],"gridSize":[3,5],"maxTrials":5,"cwords":["HE","ASH","SEA","DASH","SHEA"]},
+  {"levelNumber":35,"letters":["R","N","A","Y","I"],"targetWords":["RAINY","AIR","YARN"],"gridSize":[3,5],"maxTrials":5,"cwords":["IN","RAY","RAN","ANY","NAY","RAIN"]},
+  {"levelNumber":36,"letters":["C","O","K","L","R","C"],"targetWords":["CLOCK","CORK","LOCK"],"gridSize":[3,5],"maxTrials":5,"cwords":["OK"]},
+  {"levelNumber":37,"letters":["B","C","A","H","E"],"targetWords":["BEACH","ACE","CAB"],"gridSize":[3,5],"maxTrials":5,"cwords":[]},
+  {"levelNumber":38,"letters":["S","L","I","E","M"],"targetWords":["SMILE","LIME","MILE"],"gridSize":[3,5],"maxTrials":5,"cwords":[]},
+  {"levelNumber":39,"letters":["F","U","T","I","R"],"targetWords":["FRUIT","RUT","FIT"],"gridSize":[3,5],"maxTrials":5,"cwords":[]},
+  {"levelNumber":40,"letters":["G","H","T","I","L"],"targetWords":["LIGHT","HIT","TIG"],"gridSize":[3,5],"maxTrials":5,"cwords":["LIT"]},
+  {"levelNumber":41,"letters":["L","A","N","D","E","C"],"targetWords":["CANDLE","ACNE","LAD"],"gridSize":[3,6],"maxTrials":5,"cwords":["ACED","ALE","AND","CAN","CANE","CLAD","CLADE","CLAN","CLEAN","DALE","DAN","DANCE","DECAL","DEN","END","LACE","LAD","LADE","LAND","LANE","LEAD","LEAN","LEND"]},
+  {"levelNumber":42,"letters":["I","G","D","E","S","N"],"targetWords":["DESIGN","SIGNED","SING"],"gridSize":[3,6],"maxTrials":5,"cwords":["DEN","DENI","DENS","DIE","DIES","DIG","DIGS","DIN","DINE","DINES","DING","DINGS","DINS","DIS","ED","EDS","EGIS","END","ENDS","ENG","ENGS","ENS","GED","GEN","GENS","GID","GIDS","GIE","GIED","GIEN","GIES","GIN","GINS","GIS","ID","IDES","IDS","NEG","NEGS","NIDE","NIDES","SED","SEG","SEI","SEND","SENG","SEN","SID","SIDE","SIDH","SIED","SIGN","SINE","SINED","SINGE","SINGED"]},
+  {"levelNumber":43,"letters":["R","O","F","E","G","T"],"targetWords":["FOE","FOG","EGO"],"gridSize":[3,3],"maxTrials":5,"cwords":["FRET","ERGO","FORTE","FOR","FORE","FORGE","FORT","FROE","FROG","GORE","GOT","GOFER","GROT","OFTER","ROT","TOE","TORE"]},
+  {"levelNumber":44,"letters":["R","G","D","U","O","N"],"targetWords":["NURD","ROUND","DONG"],"gridSize":[3,5],"maxTrials":5,"cwords":["DON","GROUND","DUNG","DUO","GOD","NOD","NOR","DOG","OUR","ROD","RONG","RUD","RUG","RUN","RUNG","UNDO"]},
+  {"levelNumber":45,"letters":["S","T","U","I","L","N"],"targetWords":["INSULT","NUTS","UNIT"],"gridSize":[3,6],"maxTrials":5,"cwords":["LUST","NUT","SIN","SIT","SLIT","SLUT","SNIT","SUIT","SUN","TIN","UNITS","UNLIT","UNTIL"]},
+  {"levelNumber":46,"letters":["K","C","O","E","J","Y"],"targetWords":["KEY","JOKE","COKE"],"gridSize":[3,6],"maxTrials":5,"cwords":["YOKE"]},
+  {"levelNumber":47,"letters":["K","D","E","N","I","L"],"targetWords":["KINDLE","LINK","DINE"],"gridSize":[3,6],"maxTrials":5,"cwords":["DEN","DIE","END","INK","INKED","KID","KIND","LEND","LIE","LIED","LIKE","LIKED","LINE","LINED"]},
+  {"levelNumber":48,"letters":["R","K","T","M","E","A"],"targetWords":["MARKET","MAKER","RATE"],"gridSize":[3,6],"maxTrials":5,"cwords":["ARM","ART","ATE","EAR","EAT","ERA","MAKE","MARK","MART","MAT","MATE","MEAT","MERK","MET","RAM","RAT","REAM","REMAKE","REMARK","TAME","TEAM","TEAR","TERM","TRAM","TREK"]},
+  {"levelNumber":49,"letters":["U","C","B","L","I","P"],"targetWords":["PUBLIC","CLIP","CUB"],"gridSize":[3,6],"maxTrials":5,"cwords":["BLIP","BULB","CLUB","CUP","FLIC","LIP","PIC","PUB"]},
+  {"levelNumber":50,"letters":["I","R","W","T","E","N"],"targetWords":["WINTER","WRITE","RENT"],"gridSize":[3,6],"maxTrials":5,"cwords":["ENTIRE","NET","NEW","REIN","TIE","TIER","TIN","TWIN","WENT","WET","WIN","WINE"]}
+]

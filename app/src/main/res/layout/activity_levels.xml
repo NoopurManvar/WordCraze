@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F5FF"
+    android:paddingTop="20dp"
+    android:clipToPadding="false">
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/back"
+        android:contentDescription="Back"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <!-- Fun background decorations -->
+    <TextView
+        android:id="@+id/star_deco1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐"
+        android:textSize="40sp"
+        android:alpha="0.6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/rainbow_deco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌈"
+        android:textSize="35sp"
+        android:alpha="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"/>
+
+    <TextView
+        android:id="@+id/balloon_deco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎈"
+        android:textSize="30sp"
+        android:alpha="0.6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="125dp"/>
+
+    <!-- Colorful coins display -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coinsCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFD93D"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <!-- Coin emoji instead of icon -->
+            <ImageView
+                android:id="@+id/ivCoin"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_coin"
+                android:contentDescription="Coin"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="8dp"/>
+
+
+            <!-- Coin count -->
+            <TextView
+                android:id="@+id/tvCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="#2E3A59"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Fun animated title -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/titleCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:id="@+id/levelsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 Choose Your Level! 🎯"
+            android:textColor="#2E3A59"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="12dp"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Scrollable Grid Container with fun styling -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gridCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/titleCard"
+        app:layout_constraintBottom_toTopOf="@id/resetCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:padding="20dp"
+            android:contentDescription="@string/levels_scroll_area">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <GridLayout
+                    android:id="@+id/levelGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:columnCount="4"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Fun reset button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/resetCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FF6B9D"
+        app:layout_constraintBottom_toTopOf="@id/progressCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnResetProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔄 Reset Progress"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Colorful Progress Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/progressCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/progressSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Progress header with fun styling -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🏆 Your Amazing Progress!"
+                    android:textColor="#2E3A59"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#6BCF7F">
+
+                    <TextView
+                        android:id="@+id/progressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/20 Levels"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="6dp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Custom colorful progress bar -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F1F5F9">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_margin="4dp"
+                    android:max="20"
+                    android:progress="0"
+                    android:progressTint="#FF6B9D"
+                    android:progressBackgroundTint="#E2E8F0"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Encouraging message -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ Keep going! You're doing great! ✨"
+                android:textColor="#64748B"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- More floating decorations -->
+    <TextView
+        android:id="@+id/star_deco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨"
+        android:textSize="25sp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:id="@+id/cloud_deco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☁️"
+        android:textSize="35sp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="250dp"
+        android:layout_marginEnd="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
